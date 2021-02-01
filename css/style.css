@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -31,7 +30,7 @@ h1 {
   font-size: 4em;
   font-style: normal;
   font-weight: 900;
-  font-family: 'Meddon', cursive;
+  font-family: 'Inter', sans-serif;
   color: orange;
   text-align: center;
   text-shadow: white 7px 2px 5px;
@@ -40,23 +39,11 @@ h1 {
 }
 
 .article h2 {
-  font-family: 'Arvo',cursive;
+  font-family: 'Inter',sans-serif;
   margin: 0;
   padding: 10px;
   font-size: 3em;
   text-shadow: black 0px 1px 1px;
-}
-
-.content {
-  background-color: #ddd;
-  background-color:silver;
-background-image: 
-radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
-radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
-radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
-radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
-radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
-background-size:100px 50px;
 }
 
 .article {
@@ -68,7 +55,7 @@ background-size:100px 50px;
 }
 
 .article p {
-  font-family: Meddon, cursive;
+  font-family: Inter, sans-serif;
   font-size: 1.10em;
   text-shadow: black 0px 1px 1px;
   word-spacing: .4em;
@@ -122,4 +109,3 @@ background-size:100px 50px;
   }
 
 }
-
