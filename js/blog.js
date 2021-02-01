@@ -11,11 +11,11 @@ function displayPost() {
 				if (response.ok) {
 					return response.text();
 				} else {
-					document.getElementById("post").innerHTML = '<p>Post not found.</p>';
+					document.getElementById("posts").innerHTML = '<p>Post not found.</p>';
 					throw new Error('Post not found');
 				}
 			})
-			.then(data => document.getElementById("post").innerHTML = converter.makeHtml(data)
+			.then(data => document.getElementById("posts").innerHTML = converter.makeHtml(data)
 		);
 	}
 }
@@ -28,9 +28,9 @@ function listPosts(postObject, idxFile) {
 		.then(data => {
 			for (var i = data.length - 1; i >= 0; i--) {
 				var node = document.createElement("article");
-				node.id = 'post-' + i;
+				node.id = 'post-' + (i+1);
 				node.className = "post-preview";
-				node.innerHTML = '<h2>' + data[i].title + '</h2><p>' + data[i].abstract + '</p>';
+				node.innerHTML = '<a href="?post_id=' + (i+1) + '"><h2>' + data[i].title + '</h2><p>' + data[i].abstract + '</p></a>';
 				postObject.appendChild(node);
 			}
 	  }

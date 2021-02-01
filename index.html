@@ -15,7 +15,7 @@
 </head>
 <body>
   <header>
-    <h1>Robert W. Parker</h1>
+    <span class="title">Fraction Of A Dot</span>
   </header>
   <main>
     <section id="posts"></section>
@@ -31,9 +31,17 @@
 
     gtag('config', 'UA-68785627-4');
   </script>
+  <script type="text/javascript" src="js/showdown.min.js"></script>
   <script type="text/javascript" src="js/blog.js"></script>
   <script type="text/javascript">
-    listPosts(document.getElementById("posts"), "posts/index.json");
+    let params = (new URL(document.location)).searchParams;
+    let post_id = parseInt(params.get('post_id')); 
+    if (post_id) {
+      displayPost();
+    } else {
+      listPosts(document.getElementById("posts"), "posts/index.json");
+    }
+    
   </script>
 
 </html>

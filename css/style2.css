@@ -1,5 +1,49 @@
-h1 {
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
 	font-family: Inter;
+}
+
+.title {
+	display: inline-block;
+	transform: translate(0, 50%);
+}
+
+.title , h1 {
+	font-size: 3.5em;
 	font-weight: 900;
-	font-size: 3em;
+	margin:auto;
+}
+
+p {
+	font-weight: 400;
+}
+
+header {
+	background-color: orange;
+	margin: 0px 0px 25px 0px;
+	height: 30vh;
+	width: 100vw;
+	text-align: center;
+	box-shadow: black 0px 0px 8px 0px;
+}
+
+section {
+	max-width : 800px;
+	margin: auto;
+}
+
+article {
+	max-width: 300px;
+	display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+article a {
+	text-decoration: none;
+	color: black;
 }
