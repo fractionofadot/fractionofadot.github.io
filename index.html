@@ -5,33 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
- <link href="https://fonts.googleapis.com/css?family=Arvo|Meddon" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
   <!-- M Green: #67823A -->
 
   <title>Robert W. Parker</title>
 
 </head>
 <body>
-<div class="header">
+  <header>
+    <h1>Robert W. Parker</h1>
+  </header>
+  <main>
+    <section id="posts"></section>
+  </main>
+  </body>
 
-</div>
-<div class="title">
-  <h1>Robert W. Parker</h1>
-</div>
- <div class="content">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68785627-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
- </div>
-</body>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68785627-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-68785627-4');
-</script>
+    gtag('config', 'UA-68785627-4');
+  </script>
+  <script type="text/javascript" src="js/blog.js"></script>
+  <script type="text/javascript">
+    listPosts(document.getElementById("posts"), "posts/index.json");
+  </script>
 
 </html>

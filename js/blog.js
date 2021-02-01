@@ -20,9 +20,8 @@ function displayPost() {
 	}
 }
 
-function listPosts(postObject, fileName) {
-	let fileName = 'posts/index.json';
-	fetch(fileName)
+function listPosts(postObject, idxFile) {
+	fetch(idxFile)
 		.then(response => {
 			return response.json();
 		})
